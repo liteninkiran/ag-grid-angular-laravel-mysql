@@ -1,0 +1,27 @@
+<h1 class="text" style="text-align: center;">
+    Building Server-Side Operations in AG Grid with Angular, Laravel & MySQL
+</h1>
+
+<p class="text">
+    Enabled Features: Pagination, Grouping, Sorting, Filtering, Aggregrations 
+    and Asynchronous Set Filter Values
+</p>
+
+<ag-grid-angular
+    #agGrid
+    id="myGrid"
+    style="width: 100%; height: 90%;"
+    class="ag-theme-alpine-dark"
+    [rowData]="rowData"
+    [pagination]="true"
+    [animateRows]="true"
+    [columnDefs]="columnDefs"
+    [rowModelType]="rowModelType"
+    [defaultColDef]="defaultColDef"
+    [rowGroupPanelShow]="'always'"
+    [autoGroupColumnDef]="autoGroupColumnDef"
+    [serverSideStoreType]="serverSideStoreType"
+    [enableRangeSelection]="true"
+    [paginationAutoPageSize]="true"
+    (gridReady)="onGridReady($event)"
+></ag-grid-angular>
