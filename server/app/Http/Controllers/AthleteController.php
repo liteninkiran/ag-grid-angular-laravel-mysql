@@ -131,7 +131,7 @@ class AthleteController extends Controller
 
     public function isDoingGrouping($rowGroupCols, $groupKeys)
     {
-        // we are not doing grouping if at the lowest level. we are at the lowest level
+        // We are not doing grouping if at the lowest level. We are at the lowest level
         // if we are grouping by more columns than we have keys for (that means the user
         // has not expanded a lowest level group, OR we are not grouping at all).
 

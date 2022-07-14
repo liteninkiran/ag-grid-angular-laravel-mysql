@@ -17,7 +17,9 @@ export class AppComponent {
     public paginationPageSize;
     public autoGroupColumnDef;
 
-    constructor(private olympicWinnersService: OlympicWinnersService) {
+    constructor(
+        private olympicWinnersService: OlympicWinnersService,
+    ) {
 
         this.columnDefs = [
             {
